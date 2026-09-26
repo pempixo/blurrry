@@ -49,7 +49,7 @@ curl -fsSL https://raw.githubusercontent.com/pempixo/blurrry/main/install.sh | b
 
 ### Download
 
-1. Grab `blurrry-x.y.dmg` from the [latest release](https://github.com/pempixo/blurrry/releases/latest).
+1. Download **[blurrry.dmg](https://github.com/pempixo/blurrry/releases/latest/download/blurrry.dmg)**.
 2. Open it and drag **blurrry** into **Applications**.
 3. Launch blurrry — its icon appears in the menu bar.
 
@@ -83,7 +83,7 @@ Needs Xcode 26 or later (for the Swift toolchain and the layered app icon).
 git clone https://github.com/pempixo/blurrry.git
 cd blurrry
 ./build.sh        # builds build/blurrry.app (universal)
-./dmg.sh          # also packages dist/blurrry-<version>.dmg
+./dmg.sh          # also packages dist/blurrry.dmg
 ```
 
 ## How it works

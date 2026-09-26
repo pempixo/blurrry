@@ -8,7 +8,7 @@ STAGE=$(mktemp -d)
 cp -R build/blurrry.app "$STAGE/"
 ln -s /Applications "$STAGE/Applications"
 mkdir -p dist
-DMG="dist/blurrry-$VERSION.dmg"
+DMG="dist/blurrry.dmg"
 rm -f "$DMG"
 hdiutil create -volname "blurrry" -srcfolder "$STAGE" -fs HFS+ -format UDZO -quiet "$DMG"
 rm -rf "$STAGE"
