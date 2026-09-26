@@ -5,7 +5,7 @@ cd "$(dirname "$0")"
 ./build.sh
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" Resources/Info.plist)
 STAGE=$(mktemp -d)
-cp -R build/blurrry.app "$STAGE/"
+ditto --noextattr --norsrc build/blurrry.app "$STAGE/blurrry.app"   # leave sync-service metadata behind
 ln -s /Applications "$STAGE/Applications"
 mkdir -p dist
 DMG="dist/blurrry.dmg"
