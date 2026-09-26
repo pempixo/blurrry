@@ -39,6 +39,14 @@ Requires macOS 14 Sonoma or later. Runs natively on Apple silicon and Intel.
 brew install --cask pempixo/tap/blurrry
 ```
 
+### One-line installer
+
+No Homebrew? Paste this into Terminal — it downloads the latest release and installs it into Applications:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/pempixo/blurrry/main/install.sh | bash
+```
+
 ### Download
 
 1. Grab `blurrry-x.y.dmg` from the [latest release](https://github.com/pempixo/blurrry/releases/latest).
@@ -51,7 +59,7 @@ brew install --cask pempixo/tap/blurrry
 > ```bash
 > xattr -dr com.apple.quarantine /Applications/blurrry.app
 > ```
-> The Homebrew cask takes care of this for you.
+> Homebrew and the one-line installer take care of this for you.
 
 ## Usage
 
